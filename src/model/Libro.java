@@ -7,6 +7,14 @@ public class Libro {
     private String pabellon; // Nuevo atributo agregado
     private String estante;
 
+    public Libro(String titulo, String autor, String categoria, String pabellon, String estante) {
+        this.titulo = titulo.toUpperCase();
+        this.autor = autor;
+        this.categoria = categoria;
+        this.pabellon = pabellon.toUpperCase();
+        this.estante = estante;
+    }
+
     public void setAutor(String autor) {
         this.autor = autor;
     }
@@ -24,14 +32,6 @@ public class Libro {
     }
 
     public void setEstante(String estante) {
-        this.estante = estante;
-    }
-
-    public Libro(String titulo, String autor, String categoria, String pabellon, String estante) {
-        this.titulo = titulo;
-        this.autor = autor;
-        this.categoria = categoria;
-        this.pabellon = pabellon;
         this.estante = estante;
     }
 
