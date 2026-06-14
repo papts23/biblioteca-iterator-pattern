@@ -28,3 +28,8 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+/.idea/.gitignore
+/biblioteca-iterator-pattern.iml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/vcs.xml
