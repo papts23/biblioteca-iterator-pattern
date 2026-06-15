@@ -2,6 +2,7 @@ import collection.LibraryTree;
 import collection.TreeNode;
 import iterator.Iterator;
 import model.Libro;
+
 import java.util.Scanner;
 
 public class Main {
@@ -81,6 +82,11 @@ public class Main {
                 case "3":
                     System.out.print("\nIngrese el título del libro: ");
                     String titulo = scanner.nextLine().trim();
+
+                    if (titulo.isEmpty()) {
+                        System.out.println("Error: El título no puede estar vacío. Operación cancelada.");
+                        break;
+                    }
                     System.out.print("Ingrese el autor: ");
                     String autor = scanner.nextLine().trim();
                     System.out.print("Ingrese la categoría: ");
